@@ -20,6 +20,9 @@
 .bg-gray{
     background-color: var(--bg-gray);
 }
+.bg-discord-color{
+    background-color: var(--discord-color);
+}
 .text-white{
     color: var(--primary-color);
 }
@@ -63,34 +66,39 @@ nav ul{
     background-image: url("../img/jumbo.png");
     background-size: cover;
     background-repeat: no-repeat;
+    font-size: 16;
+    text-align: center;
 }
 #hero h1, #hero p{
-    padding-bottom: 20px;
+    padding-bottom: 25px;
     line-height: 28px;
 }
 #title{
     font-size: xx-large;
 }
 .container{
-    max-width: 1000px;
-    text-align: center;
-    padding: 150px 50px 100px;
+    max-width: 1200px;
+    padding: 150px 150px 100px;
     margin: 0 auto;
 }
+/* main  */
 main{
     max-width: 1200px;
     margin: 0 auto;
 }
-main section{
+/* sections  */
+section{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 50px 0px;
     line-height: 25px;
 }
-main section img{
+/* img  */
+section img{
     width: 60%;
 }
+/* text  */
 .section-text{
     align-self: center;
     flex-basis: calc(100% /3);
@@ -100,7 +108,61 @@ main section img{
     font-size: xx-large;
     line-height: 40px;
 }
+/* alternative  */
 .row-reverse{
     display: flex;
     flex-direction: row-reverse;
 }
+/* last section  */
+.block-section{
+    display: block;
+    text-align: center;
+}
+.block-section img{
+    width: 100%;
+}
+.download-button-text{
+    display: inline-block;
+    padding: 30px;
+    font-weight: bold;
+    background-image: url("../img/stars.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-size: larger
+}
+.block-section button{
+    margin: 30px;
+}
+/* footer  */
+footer .container{
+    padding: 30px 0 10px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--bg-gray);
+}
+#language-social-section{
+    width: 20%;
+    padding: 10px;
+}
+#language-social-section h3{
+    padding-bottom: 10px;
+}
+#ita-img{
+    width: 20px;
+}
+#social-icons{
+    padding-top: 10px;
+}
+#social-icons i{
+    padding-right: 15px;
+}
+footer ul{
+    width: 20%;
+    padding: 10px;
+    line-height: 30px;
+}
+footer ul li:first-of-type a{
+    color: var(--discord-color);
+}
+
+
