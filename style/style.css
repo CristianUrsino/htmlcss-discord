@@ -56,8 +56,8 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
     gap:30px ;
+    flex-wrap: wrap;
     padding: 15px 0;
 }
 nav ul{
@@ -77,18 +77,18 @@ nav ul{
     line-height: 28px;
 }
 #title{
-    font-size: 50px;
-    line-height: 50px;
+    font-size: 70px;
+    line-height: 70px;
     word-wrap: break-word;
 }
 header section .container{
-    padding: 120px 150px 100px;
+    padding: 110px 150px 110px;
 }
 #hero button{
-    margin: 10px 20px;
-    padding: 12px 20px;
+    margin-left: 40px;
+    padding: 18px 35px;
     border-radius: 30px;
-    font-size: 15px;
+    font-size: 20px;
 }
 /* main  */
 .main-container-flex{
