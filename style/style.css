@@ -50,6 +50,9 @@ button{
 header{
     background-color: var(--tertiary-color);
 }
+#download header{
+    background-color: var(--secondary-color);
+}
 /* nav nel header  */
 nav{
     margin: 0 auto;
@@ -72,7 +75,8 @@ nav ul{
     font-size: 16px;
     text-align: center;
 }
-#hero p{
+#hero p,
+#jumbotron p{
     padding: 25px;
     line-height: 28px;
 }
@@ -81,14 +85,35 @@ nav ul{
     line-height: 70px;
     word-wrap: break-word;
 }
-header section .container{
+header #hero .container{
     padding: 110px 150px 110px;
 }
-#hero button{
-    margin-left: 40px;
+header #jumbotron .container{
+    padding: 110px 0px 110px;
+}
+#hero button,
+#jumbotron button:first-of-type{
+    margin-right: 40px;
     padding: 18px 35px;
     border-radius: 30px;
     font-size: 20px;
+}
+/* jumbotron */
+#jumbotron .container{
+    display: flex;
+    flex-flow:row wrap;
+}
+.jumbotron-text{
+    width: 50%;
+    min-width: 500px;
+}
+.jumbotron-img{
+    width: 50%;
+}
+.jumbotron-img img{
+    width: 100%;
+    min-width: 600px;
+    object-fit: cover;
 }
 /* main  */
 .main-container-flex{
