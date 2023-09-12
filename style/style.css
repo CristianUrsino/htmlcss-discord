@@ -169,6 +169,48 @@ section img{
 main section:last-child button:last-child{
     margin: 30px;
 }
+/* main download  */
+main.download{
+    margin-top: 120px;
+}
+main.download .container{
+    display: flex;
+    flex-flow: row wrap;
+}
+main.download .column{
+    width: 49%;
+    min-width: 400px;
+}
+
+main.download .column:nth-child(2){
+    margin-left: 2%;
+    margin-top: 180px;
+}
+main.download section{
+    text-align: center;
+    background-color: var(--bg-gray);
+    padding-top: 40px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+main.download img{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+main.download h2{
+    font-size: 30px;
+}
+main.download button{
+    margin: 20px;
+    font-size: 20px;
+    padding: 15px 35px;
+    border-radius: 30px;
+    color: var(--primary-color);
+}
+main.download p{
+    margin: 25px 30px 0;
+}
 /* footer  */
 footer .container{
     padding: 30px 0 10px 0;
