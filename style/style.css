@@ -9,9 +9,7 @@
     --primary-color: white;
     --secondary-color: #23272A;
     --tertiary-color: #255EE9;
-    /* --bg-gray: #F5F5F5; */
-    /*cambiato momentaneamente, troppo chiaro non lo vedo*/
-    --bg-gray: #c1bfbf;
+    --bg-gray: #F5F5F5; 
     --discord-color: #7289DA;
 }
 .bg-secondary-color{
@@ -26,9 +24,9 @@
 .text-white{
     color: var(--primary-color);
 }
-.debug{
+/* .debug{
     border:1px solid black;
-}
+} */
 body{
     font-family: 'Fredoka', sans-serif;
     font-family: 'Montserrat', sans-serif;
@@ -38,22 +36,27 @@ a{
     color: var(--primary-color);
     text-decoration: none;
 }
-/* header */
-header{
-    background-color: var(--tertiary-color);
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
 }
 button{
     padding: 12px;
     border-radius: 20px;
     box-shadow: none;
+    border: none;
+}
+/* header */
+header{
+    background-color: var(--tertiary-color);
 }
 /* nav nel header  */
 nav{
-    max-width: 1500px;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
     gap:30px ;
     padding: 15px 0;
 }
@@ -66,32 +69,33 @@ nav ul{
     background-image: url("../img/jumbo.png");
     background-size: cover;
     background-repeat: no-repeat;
-    font-size: 16;
+    font-size: 16px;
     text-align: center;
 }
-#hero h1, #hero p{
-    padding-bottom: 25px;
+#hero p{
+    padding: 25px;
     line-height: 28px;
 }
 #title{
-    font-size: xx-large;
+    font-size: 50px;
+    line-height: 50px;
+    word-wrap: break-word;
 }
-.container{
-    max-width: 1200px;
-    padding: 150px 150px 100px;
-    margin: 0 auto;
+header section .container{
+    padding: 120px 150px 100px;
+}
+#hero button{
+    margin: 10px 20px;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 15px;
 }
 /* main  */
-main{
-    max-width: 1200px;
-    margin: 0 auto;
-}
-/* sections  */
-section{
+.main-container-flex{
+    padding: 50px 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 50px 0px;
     line-height: 25px;
 }
 /* img  */
@@ -113,12 +117,19 @@ section img{
     display: flex;
     flex-direction: row-reverse;
 }
-/* last section  */
-.block-section{
+.wave{
+    width: 100%;
     display: block;
+    opacity: 0.04;
+}
+.reverse{
+    transform: rotate(180deg);
+}
+/* last section  */
+.text-center{
     text-align: center;
 }
-.block-section img{
+.big-img{
     width: 100%;
 }
 .download-button-text{
@@ -130,7 +141,7 @@ section img{
     background-repeat: no-repeat;
     font-size: larger
 }
-.block-section button{
+main section:last-child button:last-child{
     margin: 30px;
 }
 /* footer  */
@@ -152,17 +163,22 @@ footer .container{
 }
 #social-icons{
     padding-top: 10px;
+    color: var(--primary-color);
 }
 #social-icons i{
     padding-right: 15px;
 }
-footer ul{
+footer div.container>ul{
     width: 20%;
     padding: 10px;
+    padding-bottom: 20px;
     line-height: 30px;
 }
 footer ul li:first-of-type a{
     color: var(--discord-color);
+}
+footer ul li:first-of-type{
+    padding-bottom: 15px;
 }
 
 
